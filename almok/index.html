@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>알목 방 초대</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="링크를 누르면 알목 방으로 바로 들어갑니다. 사내망에서만 열립니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="altools-alpha">
+  <meta property="og:title" content="알목 방 초대">
+  <meta property="og:description" content="링크를 누르면 알목 방으로 바로 들어갑니다. 사내망에서만 열립니다.">
+  <meta property="og:url" content="https://geon-chang.github.io/teams-og-relay-test/almok/">
+  <meta property="og:image" content="https://geon-chang.github.io/teams-og-relay-test/almok/thumb.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="210">
+  <meta property="og:image:height" content="210">
+  <meta name="twitter:card" content="summary">
+  <script>
+    // 이동할 곳은 고정하고, 링크 뒤의 ?room=... 같은 값만 그대로 넘긴다.
+    var BASE = "https://alpha.altools.com/preview/almok/";
+    location.replace(BASE + location.search + location.hash);
+  </script>
+</head>
+<body>
+  <p>알목 방으로 이동합니다. 이동하지 않으면 <a id="go" href="https://alpha.altools.com/preview/almok/">여기</a>를 누르세요. 사내망에서만 열립니다.</p>
+  <script>
+    document.getElementById("go").href = "https://alpha.altools.com/preview/almok/" + location.search + location.hash;
+  </script>
+</body>
+</html>

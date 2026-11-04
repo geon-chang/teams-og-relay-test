@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>알목 토너먼트 초대</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="닉네임으로 참가하면 대진이 정해지고 내 경기가 열립니다. 사내망에서만 열립니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="알목">
+  <meta property="og:title" content="알목 토너먼트 초대">
+  <meta property="og:description" content="닉네임으로 참가하면 대진이 정해지고 내 경기가 열립니다. 사내망에서만 열립니다.">
+  <meta property="og:url" content="https://geon-chang.github.io/teams-og-relay-test/almok/t/">
+  <meta property="og:image" content="https://geon-chang.github.io/teams-og-relay-test/almok/t/thumb.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="210">
+  <meta property="og:image:height" content="210">
+  <meta property="og:image:alt" content="대진표와 트로피 그림">
+  <meta name="twitter:card" content="summary">
+  <script>
+    // 이동할 곳은 고정하고, 링크 뒤의 ?t=... 같은 값만 그대로 넘긴다. 카드용 봇은 스크립트를 돌리지 않는다.
+    var BASE = "https://alpha.altools.com/preview/almok/";
+    location.replace(BASE + location.search + location.hash);
+  </script>
+</head>
+<body>
+  <p>알목 토너먼트로 이동합니다. 이동하지 않으면 <a id="go" href="https://alpha.altools.com/preview/almok/">여기</a>를 누르세요. 사내망에서만 열립니다.</p>
+  <script>
+    document.getElementById("go").href = "https://alpha.altools.com/preview/almok/" + location.search + location.hash;
+  </script>
+</body>
+</html>
